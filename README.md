@@ -4,6 +4,7 @@ API REST desenvolvida em Java com Spring Boot, utilizando Spring MVC (Servlet), 
 
 O projeto fornece endpoints para gerenciamento de produtos, seguindo boas práticas de organização, separação de responsabilidades e uso de DTOs.
 
+---
 
 🚀 Tecnologias Utilizadas
 
@@ -22,6 +23,8 @@ Lombok
 Maven
 
 H2 / PostgreSQL (configurável)
+
+---
 
 🧱 Arquitetura do Projeto
 
@@ -49,6 +52,8 @@ src/main/java
     │
     └── ApplicationRunner
 
+---
+
 📌 Responsabilidade das Camadas
 🔹 domain
 
@@ -61,6 +66,8 @@ Product → Entidade JPA que representa o produto no banco de dados.
 repository
 
 ProductRepository → Interface de persistência usando Spring Data JPA.
+
+---
 
 🔹 service
 
@@ -75,6 +82,8 @@ Realiza validações de negócio
 NotFoundException
 
 Exceção customizada para recursos não encontrados
+
+---
 
 🔹 web
 
@@ -93,6 +102,8 @@ ProductResponse → DTO de saída
 handler
 
 Espaço reservado para tratamento global de exceções (@ControllerAdvice)
+
+---
 
 🔗 Endpoints da API
 📄 Listar produtos (paginado)
@@ -119,7 +130,7 @@ Body (JSON):
 {
   "name": "Notebook",
   "price": 4500.00,
-  "description": "Notebook para desenvolvimento"
+  "description": "Notebook para trabalhar"
 }
 
 
